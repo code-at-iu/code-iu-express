@@ -1,0 +1,48 @@
+
+.program-div{
+    border-bottom: 1px solid  #24253A;
+    height: 200px; 
+   display: grid;
+   grid-template-columns: 30% 70%;
+}
+
+.program-div .program-img{
+    display: inline;
+}
+
+.program-div .text-container .program-header{
+    text-align: center;
+    color: #24253A; 
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.program-div .text-container hr{
+    width: 80%;
+    border-color: #DD0031;
+}
+
+.program-div .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-div .text-container{
+    margin-top: 5px;
+}
+
+.program-list-item{
+    font-size: 18px;
+    margin-bottom: 7px;
+    color: #24253A; 
+    width: 90%;
+}
+
+@media only screen and (max-width: 750px) {
+    .program-list-item{
+        font-size: 15px;
+        color: #24253A; 
+        margin-bottom: 0px;
+    }
+  }

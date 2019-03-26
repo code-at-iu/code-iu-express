@@ -1,0 +1,65 @@
+/*
+Body and HTML
+*/
+
+@font-face {
+      font-family: 'Roboto';
+      src: url('./fonts/Roboto/Roboto-Regular.ttf');
+    }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.red{
+    color: #DD0031;
+}
+
+.black{
+    color: #24253A; 
+}
+
+/*
+Navbar
+*/
+
+nav{
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px solid #DD0031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #nav-logo a{
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+nav #nav-logo h3{
+    font-family: Roboto;
+    font-size: 4rem;
+    color: #24253A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav #nav-list{
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+nav #nav-list .nav-item{
+    text-decoration: none;
+    color:#24253A; 
+    padding-left: 4px;
+}
+
+
+nav #nav-list .nav-item:hover{
+    color: #DD0031;
+    cursor: pointer;
+}
