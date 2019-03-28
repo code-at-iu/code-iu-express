@@ -15,33 +15,26 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
+//cors middlewear 
+
 app.use(cors());
 app.use(expressLayouts);
+
+// ejs template engine middlewear
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-    res.render('index', {
-        css: '/css/index.css'
-    });
-});
 
+// routes
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-        css: '/css/about.css'
-    });
-});
+const index_routes = require('./routes/index_routes');
+app.use(index_routes);
 
-app.get('/programs', (req, res) => {
-    res.render('programs', {
-        css: '/css/programs.css'
-    });
-});
-
+// app
 
 const PORT = process.env.PORT || 3000;
 
 
 app.listen(PORT);
+
